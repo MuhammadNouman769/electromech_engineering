@@ -34,7 +34,8 @@ isliye Django root-level `templates/` folder ko directly dhoondh leta hai — ko
 namespacing (`website/pages/...`) ki zaroorat nahi.
 
 ## Kaise Chalayen
-
+1. Clone the repository
+git clone https://github.com/MuhammadNouman769/electromech_engineering
 ```bash
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
