@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Checkout{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Checkout</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>Shop</li>
+                <li>Checkout</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--CheckOut Page-->
+    <div class="checkout-page">
+        <div class="auto-container">
+        
+            <!--Default Links-->
+            <ul class="default-links">
+                <li>Exisitng Customer? <a href="#">Click here to login</a></li>
+                <li>Have a coupon? <a href="#">Click here to enter your code</a></li>
+            </ul>
+            <!--Checkout Details-->
+            <div class="checkout-form">
+                <form method="post" action="checkout.html">
+                    <div class="row clearfix">
+                        <!--Column-->
+                        <div class="column col-md-6 col-sm-12 col-xs-12">
+                            <div class="checkout-title">
+                                <h2>Billing Address</h2>
+                            </div>
+                            <div class="row clearfix">
+                            
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Country <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="field-label">First Name <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="field-label">Last Name <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Address <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Town / City <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Contact Info <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="Email Address">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="field-name" value="" placeholder="Phone Number">
+                                </div>
+                                
+                                <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="check-box"><input type="checkbox" name="shipping-option" id="account-option"> &ensp; <label for="account-option">Create an account?</label></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--Column-->
+                        <div class="column col-md-6 col-sm-12 col-xs-12">
+                            <div class="checkout-title">
+                                <h2>Shiping to a Different Address</h2>
+                            </div>
+                            
+                            <div class="row clearfix">
+                            
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Country <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="field-label">First Name <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="field-label">Last Name <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Address <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Town / City <sup>*</sup></div>
+                                    <input type="text" name="field-name" value="" placeholder="">
+                                </div>
+                                
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Other Notes</div>
+                                    <textarea class="" placeholder="Special notes about your order..." ></textarea>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--End Checkout Details-->
+            
+       </div>
+       
+       <!--Lower Content-->
+        <div class="lower-content">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Order Column-->
+                    <div class="order-column column col-md-6 col-sm-12 col-xs-12">
+                        <!--Sec Title-->
+                        <div class="checkout-title">
+                            <h2>Order Summary</h2>
+                        </div>
+                        <div class="cart-outer">
+                            <table class="cart-table">
+                                <thead class="cart-header">
+                                    <tr>
+                                        <th class="prod-column">Product</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td class="prod-column">
+                                            <div class="column-box">
+                                                <figure class="prod-thumb"><img src="{% static 'website/images/resource/products/prod-thumb-1.jpg' %}" alt=""></figure>
+                                                <h4 class="prod-title">The Innovators</h4>
+                                            </div>
+                                        </td>
+                                        <td class="qty"><input class="quantity-spinner" type="text" value="2" name="quantity"></td>
+                                        <td class="sub-total">$34.99</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="prod-column">
+                                            <div class="column-box">
+                                                <figure class="prod-thumb"><img src="{% static 'website/images/resource/products/prod-thumb-2.jpg' %}" alt=""></figure>
+                                                <h4 class="prod-title">Good to Great Look</h4>
+                                            </div>
+                                        </td>
+                                        <td class="qty"><input class="quantity-spinner" type="text" value="2" name="quantity"></td>
+                                        <td class="sub-total">$29.99</td>
+                                    </tr>
+                                    
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                    </div>
+                    <!--Cart Column-->
+                    <div class="column col-md-6 col-sm-12 col-xs-12">
+                        <!--Sec Title-->
+                        <div class="checkout-title">
+                            <h2>Cart Totals</h2>
+                        </div>
+                        <!--Totals Table-->
+                        <ul class="totals-table">
+                            <li class="clearfix"><span class="col title">Cart Subtotal</span><span class="col">$146.00</span></li>
+                            <li class="clearfix"><span class="col title">Shipping and Handling</span><span class="col total">Free Shipping</span></li>
+                            <li class="clearfix"><span class="col title">Order Total</span><span class="col total">$146.00</span></li>
+                        </ul>
+                        
+                        <!--Payment Options-->
+                        <div class="payment-options">
+                            <ul>
+                                <li>
+                                    <div class="radio-option">
+                                        <input type="radio" name="payment-group" id="payment-1" checked>
+                                        <label for="payment-1"><strong>Direct Bank Transfer</strong><span class="small-text">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-option">
+                                        <input type="radio" name="payment-group" id="payment-3">
+                                        <label for="payment-3"><strong>Paypal <a href="#">What is Paypal</a></strong></label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="theme-btn btn-style-one place-order">Place Order</button>
+                        </div>
+                        <!--End Place Order-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Lower Content-->
+       
+    </div>
+    <!--End CheckOut Page-->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/isotope.js' %}"></script>
+<script src="{% static 'website/js/jquery.bootstrap-touchspin.js' %}"></script>
+{% endblock %}

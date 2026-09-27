@@ -1,0 +1,364 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Blog Single{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Single Post</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li><a href="{% url 'website:blog' %}">Blog</a></li>
+                <li>Single Post</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                
+                <!--Content Side / Our Blog-->
+                <div class="content-side col-md-8 col-sm-12 col-xs-12">
+                    <!--Our Classic-->
+                    <div class="blog-single padding-right">
+                        <div class="inner-box">
+                            <div class="top-box clearfix">
+                                <div class="image-box">
+                                    <img src="{% static 'website/images/testimonials/1.png' %}" alt="Awesome Image"/>
+                                    <h4>Perry Milton</h4>
+                                    <p>Posted On 21st July, 2018</p>
+                                </div><!-- /.image-box -->
+                                <div class="text-box">
+                                    <ul class="info-list">
+                                        <li>
+                                            <i class="fa fa-folder-open"></i><a href="#">Industries</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-tags"></i><a href="#"> Chemical</a>,
+                                            <a href="#"> Manufacturing</a>,
+                                            <a href="#"> Tool</a>,
+                                            <a href="#"> Technology</a>
+                                        </li>
+                                    </ul>
+                                    <h2>Top 10 reason why should choose our industry by expert.</h2>
+                                </div><!-- /.text-box -->
+                            </div><!-- /.top-box -->
+                            <div class="image"><img src="{% static 'website/images/resource/blog-1.jpg' %}" alt="" />
+                            </div>
+                            <div class="lower-content clearfix">
+                                <br>
+                                <p>How all this mistaken idea of denouncing pleasure and praising pain was born and we will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness take a trivial example.</p>
+                                <p>Desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure account of system. </p>
+                                <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that all are extremely.</p>
+                                <blockquote>
+                                    <div class="quote-icon"><span class="icon fa fa-quote-right"></span></div>
+                                    <div class="blockquote-text">  There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which  can procure him some great pleasure. </div>
+                                    <div class="quote-info">
+                                        <h4>Richard Venanda</h4>
+                                        <div class="quote-designation">CEO/Founder</div>
+                                    </div>
+                                </blockquote>
+
+                                <div class="two-column clearfix">
+                                    <div class="row clearfix">
+                                        <div class="image-column col-md-6 col-sm-6 col-xs-12">
+                                            <div class="image">
+                                                <img src="{% static 'website/images/resource/image-2.jpg' %}" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="text-column col-md-6 col-sm-6 col-xs-12">
+                                            <p>Explain you how  mistaken idea denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the  of truth pain itself occur great.</p>
+                                            <p>The master-builder of human happiness which toil and pain can procure him some seds great pleasure take a of ever.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--post-share-options-->
+                                <div class="post-share-options">
+                                    <div class="post-share-inner clearfix">
+                                        <ul class="pull-left info-links clearfix">
+                                            <li><a href="#"><span class="fa fa-heart"></span></a>18</li>
+                                            <li><a href="#"><span class="fa fa-comments"></span></a>6</li>
+                                        </ul>
+                                        <div class="pull-right tags">
+                                            <span>Tags :</span>
+                                            <a href="#">Finance</a>, 
+                                            <a href="#">Marketing</a>, 
+                                            <a href="#">Growth</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="group-title">
+                            <h2>About Author</h2>
+                        </div>
+                        
+                        <!--Author Box-->
+                        <div class="author-box">
+                            <div class="author-comment">
+                                <div class="inner">
+                                    <div class="image"><img src="{% static 'website/images/resource/author.jpg' %}" alt="" /></div>
+                                    <h3>Lilly Anderson</h3>
+                                    <div class="text">We will give you a complete account of the system, and expound actual teachings of explorer of the truth, the master-builder of human happiness.</div>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Comments Area-->
+                        <div class="comments-area">
+                            <div class="group-title"><h2>Read Comments</h2></div>
+                            <!--Comment Box-->
+                            <div class="comment-box">
+                                <div class="comment">
+                                    <div class="author-thumb"><img src="{% static 'website/images/resource/thumb-3.jpg' %}" alt=""></div>
+                                    <div class="comment-inner">
+                                        <div class="comment-info clearfix">Steven Rich – Sep 17, 2016:</div>
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star light"></span>
+                                        </div>
+                                        <div class="text">How all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Comment Box-->
+                            <div class="comment-box reply-comment">
+                                <div class="comment">
+                                    <div class="author-thumb"><img src="{% static 'website/images/resource/thumb-4.jpg' %}" alt=""></div>
+                                    <div class="comment-inner">
+                                        <div class="comment-info clearfix">William Cobus – Aug 21, 2016:</div>
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-half-empty"></span>
+                                        </div>
+                                        <div class="text">There anyone who loves or pursues or desires to obtain pain itself, because it is pain sed, because occasionally circumstances occur some great pleasure.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Comment Form -->
+                        <div class="comment-form">  
+                            <div class="group-title">
+                                <h2>Add Your Comments</h2>
+                                <div class="separator"></div>
+                            </div>
+                            <div class="rating-box">
+                                <div class="text"> Your Rating:</div>
+                                <div class="rating">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                </div>
+                                <div class="rating">
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </div>
+                                <div class="rating">
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </div>
+                                <div class="rating">
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </div>
+                                <div class="rating">
+                                    <a href="#">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <form method="post" action="contact.html">
+                                <div class="row clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <label>First Name*</label>
+                                        <input type="text" name="username" placeholder="" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <label>Last Name*</label>
+                                        <input type="text" name="username" placeholder="" required>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <label>Email*</label>
+                                        <input type="email" name="email" placeholder="" required>
+                                    </div>
+                                    
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <label>Your Comments*</label>
+                                        <textarea name="message" placeholder=""></textarea>
+                                    </div>
+                                    
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Submit Now</button>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-md-4 col-sm-12 col-xs-12">
+                    <aside class="sidebar default-sidebar">
+                        
+                        <!-- Search -->
+                        <div class="sidebar-widget search-box">
+                            <form method="post" action="contact.html">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Enter Search Keywords" required>
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget category-widget">
+                            <div class="sidebar-title">
+                                <h2>Categories</h2>
+                            </div>
+                            <ul class="cat-list">
+                                <li><a href="#">Latest Technology   <span>6</span></a></li>
+                                <li><a href="#">Manufacturing       <span>2</span></a></li>
+                                <li><a href="#">Agriculture         <span>8</span></a></li>
+                                <li><a href="#">Chemical Industry   <span>5</span></a></li>
+                                <li><a href="#">treatment           <span>3</span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Popular Posts -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-title"><h2>Latest From Blog</h2></div>
+
+                            <article class="post">
+                                <div class="post-info">April 18, 2017</div>
+                                <div class="text"><a href="{% url 'website:blog_single' %}">We are best for industrial & business solution.</a></div>
+                            </article>
+
+                            <article class="post">
+                                <div class="post-info">February 14, 2017</div>
+                                <div class="text"><a href="{% url 'website:blog_single' %}">Top ten reason why should choose our industry.</a></div>
+                            </article>
+                            
+                            <article class="post">
+                                <div class="post-info">January 16, 2017</div>
+                                <div class="text"><a href="{% url 'website:blog_single' %}">We won the best factory award of the year.</a></div>
+                            </article>
+                        </div>
+
+                        <!-- Popular Posts -->
+                        <div class="sidebar-widget flicker-posts">
+                            <div class="sidebar-title"><h2>Flickr Images</h2></div>
+                            <ul class="flicker-list clearfix">
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-1.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-2.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-3.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-4.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-5.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-6.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-7.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-8.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="{% static 'website/images/resource/flicker-1-9.jpg' %}" alt="Awesome Image"/>
+                                    <span class="box"><i class="fa fa-flickr"></i></span>
+                                </a></li>
+                            </ul><!-- /.flicker-list -->
+
+                        </div>
+                        
+                        <!-- Popular Tags -->
+                        <div class="sidebar-widget popular-tags">
+                            <div class="sidebar-title"><h2>Tag Cloud</h2></div>
+                            <a href="#">Builders</a>
+                            <a href="#">Bio & Chemical</a>
+                            <a href="#">Construction</a>
+                            <a href="#">Gas Engineer</a>
+                            <a href="#">Growth</a>
+                            <a href="#">Manufacturing</a>
+                            <a href="#">New</a>
+                            <a href="#">Stock</a>
+                            <a href="#">Travel</a>
+                            <a href="#">Transportation</a>
+                            <a href="#">Process</a>
+                        </div>
+                        
+                        <!-- Popular Tags -->
+                        <div class="sidebar-widget subscribe-widget">
+                            <div class="sidebar-title"><h2>Subscribe us for updates</h2></div>
+                            <form action="sendemail.php" class="subscribe-form">
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="email" placeholder="Email Address">
+                                <button type="submit" class="theme-btn btn-style-one">Subscribe Us</button>
+                            </form><!-- /.subscribe-form -->
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Sidebar Page Container-->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+{% endblock %}

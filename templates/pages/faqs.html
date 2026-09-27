@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | FAQ's{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Customer FAQ’s</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>About Us</li>
+                <li>FAQ’s</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Faq Column-->
+                <div class="faq-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <!--Accordian Box-->
+                        <ul class="accordion-box">
+                            
+                            <!--Block-->
+                            <li class="accordion block">
+                                <div class="acc-btn"><div class="icon-outer"><span class="icon flaticon-letter-x"></span></div>We bring together the best to the world?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</div>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <!--Block-->
+                            <li class="accordion block active-block">
+                                <div class="acc-btn active"><div class="icon-outer"><span class="icon flaticon-letter-x"></span></div>Submit your sponsorship request easy way?</div>
+                                <div class="acc-content current">
+                                    <div class="content">
+                                        <div class="text">Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <!--Block-->
+                            <li class="accordion block">
+                                <div class="acc-btn"><div class="icon-outer"><span class="icon flaticon-letter-x"></span></div>What is the procedure to join with your company?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <!--Block-->
+                            <li class="accordion block">
+                                <div class="acc-btn"><div class="icon-outer"><span class="icon flaticon-letter-x"></span></div>We bring together the best people to the world?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <!--Block-->
+                            <li class="accordion block">
+                                <div class="acc-btn"><div class="icon-outer"><span class="icon flaticon-letter-x"></span></div>What makes you special from others?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!--Block-->
+                            <li class="accordion block">
+                                <div class="acc-btn"><div class="icon-outer"><span class="icon flaticon-letter-x"></span></div>Why would a successful entrepreneur hire?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!--Block-->
+                            <li class="accordion block">
+                                <div class="acc-btn"><div class="icon-outer"><span class="icon flaticon-letter-x"></span></div>Why would a successful entrepreneur hire?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="form-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <div class="sec-title">
+                            <h2>Ask Your Questions</h2>
+                        </div>
+                        <!--Contact Form-->
+                        <div class="faq-form">
+                            <form method="post" action="index-2.html">
+                                <div class="row clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="username" value="" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="email" name="email" value="" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <input type="text" name="subject" value="" placeholder="Subject" required>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <textarea name="message" placeholder="Your Questions..."></textarea>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <button type="submit" class="theme-btn">Submit Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End FAQ Section -->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+{% endblock %}

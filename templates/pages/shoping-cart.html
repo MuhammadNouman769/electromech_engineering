@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Shopping Cart{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Shopping Cart</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>Shop</li>
+                <li>Shopping Cart</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--Cart Section-->
+    <section class="cart-section">
+        <div class="auto-container">
+            
+            <!--Cart Outer-->
+            <div class="cart-outer">
+                <div class="table-outer">
+                    <table class="cart-table">
+                        <thead class="cart-header">
+                            <tr>
+                                <th class="prod-column">Product</th>
+                                <th>&nbsp;</th>
+                                <th>Quantity</th>
+                                <th>Avalability</th>
+                                <th class="price">Price</th>
+                                <th>Total</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="prod-column">
+                                    <div class="column-box">
+                                        <figure class="prod-thumb"><a href="#"><img src="{% static 'website/images/resource/products/prod-thumb-1.jpg' %}" alt=""></a></figure>
+                                        <h3 class="prod-title">The Innovators</h3>
+                                    </div>
+                                </td>
+                                <td class="qty"><input class="quantity-spinner" type="text" value="2" name="quantity"></td>
+                                <td class="unit-price"><div class="available-info"><span class="icon fa fa-check"></span> Item(s) <br>Avilable Now</div></td>
+                                <td class="price">$34.99</td>
+                                <td class="sub-total">$34.99</td>
+                                <td class="remove"><a href="#" class="remove-btn"><span class="flaticon-letter-x"></span></a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="2" class="prod-column">
+                                    <div class="column-box">
+                                        <figure class="prod-thumb"><a href="#"><img src="{% static 'website/images/resource/products/prod-thumb-2.jpg' %}" alt=""></a></figure>
+                                        <h3 class="prod-title">Good to Great Look</h3>
+                                    </div>
+                                </td>
+                                <td class="qty"><input class="quantity-spinner" type="text" value="2" name="quantity"></td>
+                                <td class="unit-price"><div class="available-info"><span class="icon fa fa-check"></span> Item(s) <br>Avilable Now</div></td>
+                                <td class="price">$29.99</td>
+                                <td class="sub-total">$ 29.99</td>
+                                <td class="remove"><a href="#" class="remove-btn"><span class="flaticon-letter-x"></span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="coupon-outer clearfix">
+                    <div class="pull-left">
+                        <div class="apply-coupon clearfix">
+                            <div class="form-group clearfix">
+                                <input type="text" name="coupon-code" value="" placeholder="Enter Coupon Code...">
+                            </div>
+                            <div class="form-group clearfix">
+                                <button type="button" class="theme-btn coupon-btn btn-style-one">Apply Coupon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" class="theme-btn cart-btn">Update Cart</button>
+                    </div>
+                </div>
+                
+                
+                <div class="row clearfix">
+                    <div class="column col-md-6 col-sm-12 col-xs-12">
+                        <div class="shipping-form">
+                            <div class="sec-title"><h2>Calculate Shipping</h2></div>
+                            <form method="post" action="index.html">
+                                <div class="row clearfix">
+                                    <!--Form Group-->
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <select name="country" class="custom-select-box">
+                                            <option>United Kingdom (UK)</option>
+                                            <option>Pakistan</option>
+                                            <option>USA</option>
+                                            <option>CANADA</option>
+                                            <option>INDIA</option>
+                                        </select>
+                                    </div>
+                                    <!--Form Group-->
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="state" value="" placeholder="State / Country">
+                                    </div>
+                                    <!--Form Group-->
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="code" value="" placeholder="Zip Code">
+                                    </div>
+                                    <!--Form Group-->
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="theme-btn total-btn">Update Totals</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="column col-md-6 col-sm-12 col-xs-12">
+                        <div class="sec-title"><h2>Cart Totals</h2></div>
+                        <!--Totals Table-->
+                        <ul class="totals-table">
+                            <li class="clearfix"><span class="col col-title">Cart Subtotal</span><span class="col">$146.00</span></li>
+                            <li class="clearfix"><span class="col col-title">Shipping and Handling</span><span class="col">Free Shipping</span></li>
+                            <li class="clearfix"><span class="col col-title">Order Total</span><span class="col">$146.00</span></li>
+                        </ul>
+                        
+                        <div class="padd-top-30 text-right"><button type="submit" class="theme-btn checkout-btn btn-style-one">Proceed to Checkout</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/isotope.js' %}"></script>
+<script src="{% static 'website/js/jquery.bootstrap-touchspin.js' %}"></script>
+{% endblock %}

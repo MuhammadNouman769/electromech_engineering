@@ -1,0 +1,270 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Blog Default{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Blog Default</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li><a href="{% url 'website:blog' %}">Blog</a></li>
+                <li>Blog Default</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-1.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">We are best for any industrial & business solution.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/1.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Thomas Mersinger</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-2.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">10 reason why should choose our industry.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/2.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Erich Larsen</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-3.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">We won best factory award of the year 2015 & 16.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/3.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Fermin Seiler</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-4.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">We are best for any industrial & business solution.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/1.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Dean Snith</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-5.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">10 reason why should choose our industry.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/2.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Terina Perz</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-6.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">We are best for any industrial & business solution.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/3.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Candice Kenaan</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-7.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">We are best for any industrial & business solution.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/1.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Danial Neis</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-8.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">We are best for any industrial & business solution.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/2.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Marylin Crupe</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block -->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box"><a href="{% url 'website:blog_single' %}"><img src="{% static 'website/images/resource/news-9.jpg' %}" alt=""></a></div>
+                        <div class="lower-content clearfix">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="#">Construction</a>, </li>
+                                    <li><a href="#">June 06, 2019</a></li>
+                                </ul>  
+                            </div>
+                            <h3><a href="{% url 'website:blog_single' %}">We are best for any industrial & business solution.</a></h3>
+                            
+                            <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
+                            <div class="more-box clearfix">
+                                <div class="author-box">
+                                    <img src="{% static 'website/images/testimonials/3.png' %}" alt="Awesome Image"/>
+                                    <span class="author-name">Halina Adjutant</span>
+                                </div><!-- /.author-box -->
+                                <div class="link-box"><a href="{% url 'website:blog_single' %}">Read More</a> <span class="icon icon-aroow-right"></span></div>
+                            </div><!-- /.more-box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Styled Pagination -->
+            <div class="styled-pagination text-center">
+                <ul class="clearfix">
+                    <li class="prev"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li class="next"><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us -->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+{% endblock %}

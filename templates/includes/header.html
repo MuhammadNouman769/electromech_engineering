@@ -1,0 +1,257 @@
+{% load static %}
+<header class="main-header">
+        <!--Header Top-->
+    	<div class="header-top">
+        	<div class="auto-container">
+            	<div class="inner-container clearfix">
+                    <div class="top-left">
+                        <ul class="clearfix">
+                            <li><i class="icon flaticon-clock-circular-outline"></i> Mon - Fri: 09:00 - 18:00 </li>
+                            <li class="social-links"><span>Stay Connected :</span>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-right clearfix">
+                        <div class="buy-now"><a href="#">Buy Now</a></div>
+                        <div class="language dropdownn">
+                            <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="icon flaticon-globe"></span> California <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">California</a></li>
+                                <li><a href="#">Washington</a></li>
+                                <li><a href="#">Bristol</a></li>
+                                <li><a href="#">Georgetown</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-outer">
+                    	<div class="logo"><a href="{% url 'website:index' %}"><img src="{% static 'website/images/logo.png' %}" alt="" title=""></a></div>
+                    </div>
+                    
+                    <div class="pull-right upper-right clearfix">
+                    	
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                        	<div class="icon-box"><span class="flaticon-place"></span></div>
+                            <ul>
+                                <li>13, Big Smart Str, 2nd Cross</li>
+                                <li><strong>Newyork, USA 1002.</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                        	<div class="icon-box"><span class="flaticon-mails"></span></div>
+                            <ul>
+                                <li>1-800-784-533 & 544</li>
+                                <li><strong>Machinery@Support.com</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+        <!--Header Lower-->
+        <div class="header-lower">
+            
+        	<div class="auto-container">
+            	<div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:index' %}">Home One</a></li>
+                                        <li><a href="{% url 'website:index2' %}">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="current dropdown"><a href="#">About Us</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:about' %}">About Company</a></li>
+                                        <li><a href="{% url 'website:testimonial' %}">Testimonials</a></li>
+                                        <li><a href="{% url 'website:faqs' %}">FAQ’s</a></li>
+                                        <li><a href="{% url 'website:pricing' %}">Pricing Table</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Market Sectors</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:market_sector' %}">Market Sectors</a></li><li><a href="{% url 'website:market_sector_single' %}">Construction Products</a></li>
+                                        <li><a href="{% url 'website:aero_space_services' %}">Aero Space Services</a></li>
+                                        <li><a href="{% url 'website:railway_infrastructure' %}">Railway Infrastructure</a></li>
+                                        <li><a href="{% url 'website:ship_building_industry' %}">Ship Building Industry</a></li>
+                                        <li><a href="{% url 'website:power_and_energy' %}">Power and Energy</a></li>
+                                        <li><a href="{% url 'website:automative_system' %}">Automative System</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Projects</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:projects' %}">Projects Default</a></li>
+                                        <li><a href="{% url 'website:projects_with_filter' %}">Projects With Filter</a></li>
+                                        <li><a href="{% url 'website:projects_modern' %}">Projects Modern</a></li>
+                                        <li><a href="{% url 'website:projects_single' %}">Single Project</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">News</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:blog' %}">Blog Default</a></li>
+                                        <li><a href="{% url 'website:blog_large_image' %}">Blog Large Image</a></li>
+                                        <li><a href="{% url 'website:blog_single' %}">Single Post</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Shop</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:shop' %}">Shop Products</a></li>
+                                        <li><a href="{% url 'website:shop_single' %}">Product Single</a></li>
+                                        <li><a href="{% url 'website:shoping_cart' %}">Shopping Cart</a></li>
+                                        <li><a href="{% url 'website:checkout' %}">Checkout</a></li>
+                                        <li><a href="{% url 'website:login' %}">My Account</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Contact Us</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:contact' %}">Contact us 01</a></li>
+                                        <li><a href="{% url 'website:contact_2' %}">Contact us 02</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!--Search Box-->
+                    <div class="search-box">
+                        <div class="dropdown dropdown-outer">
+                            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                <li class="panel-outer">
+                                    <div class="form-container">
+                                        <form method="post" action="blog.html">
+                                            <div class="form-group">
+                                                <input type="search" name="field-name" value="" placeholder="Search Here" required="">
+                                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Outer Box-->
+                    <div class="outer-box">
+                        <div class="link-box"><a href="{% url 'website:contact' %}" class="theme-btn btn-style-one">Get a Quote</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Lower-->
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="{% url 'website:index' %}" class="img-responsive"><img src="{% static 'website/images/logo-small.png' %}" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:index' %}">Home One</a></li>
+                                        <li><a href="{% url 'website:index2' %}">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="current dropdown"><a href="#">About Us</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:about' %}">About Company</a></li>
+                                        <li><a href="{% url 'website:testimonial' %}">Testimonials</a></li>
+                                        <li><a href="{% url 'website:faqs' %}">FAQ’s</a></li>
+                                        <li><a href="{% url 'website:pricing' %}">Pricing Table</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Market Sectors</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:market_sector' %}">Market Sectors</a></li><li><a href="{% url 'website:market_sector_single' %}">Construction Products</a></li>
+                                        <li><a href="{% url 'website:aero_space_services' %}">Aero Space Services</a></li>
+                                        <li><a href="{% url 'website:railway_infrastructure' %}">Railway Infrastructure</a></li>
+                                        <li><a href="{% url 'website:ship_building_industry' %}">Ship Building Industry</a></li>
+                                        <li><a href="{% url 'website:power_and_energy' %}">Power and Energy</a></li>
+                                        <li><a href="{% url 'website:automative_system' %}">Automative System</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Projects</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:projects' %}">Projects Default</a></li>
+                                        <li><a href="{% url 'website:projects_with_filter' %}">Projects With Filter</a></li>
+                                        <li><a href="{% url 'website:projects_modern' %}">Projects Modern</a></li>
+                                        <li><a href="{% url 'website:projects_single' %}">Single Project</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">News</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:blog' %}">Blog Default</a></li>
+                                        <li><a href="{% url 'website:blog_large_image' %}">Blog Large Image</a></li>
+                                        <li><a href="{% url 'website:blog_single' %}">Single Post</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Shop</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:shop' %}">Shop Products</a></li>
+                                        <li><a href="{% url 'website:shop_single' %}">Product Single</a></li>
+                                        <li><a href="{% url 'website:shoping_cart' %}">Shopping Cart</a></li>
+                                        <li><a href="{% url 'website:checkout' %}">Checkout</a></li>
+                                        <li><a href="{% url 'website:login' %}">My Account</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Contact Us</a>
+                                    <ul>
+                                        <li><a href="{% url 'website:contact' %}">Contact us 01</a></li>
+                                        <li><a href="{% url 'website:contact_2' %}">Contact us 02</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    </header>

@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Projects With Filter{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Projects With Filter</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>Projects</li>
+                <li>Projects With Filter</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- Project Section Two -->
+    <section class="projects-section-two">
+        <div class="auto-container">
+
+             <!--MixitUp Galery-->
+            <div class="mixitup-gallery">
+                <div class="inner-container clearfix">
+                    <!--Filter-->
+                    <div class="filters text-center clearfix">                     
+                        <ul class="filter-tabs filter-btns clearfix">
+                            <li class="filter active" data-role="button" data-filter="all">View All</li>
+                            <li class="filter" data-role="button" data-filter=".engineering">Engineering</li>
+                            <li class="filter" data-role="button" data-filter=".construction">Construction</li>
+                            <li class="filter" data-role="button" data-filter=".power">Power & Energy</li>
+                            <li class="filter" data-role="button" data-filter=".agriculture">Agriculture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter-list row clearfix">
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all power construction col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/1.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/1.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">Rail Engine Manufacture</a></h4>
+                            <span class="tag">Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering power agriculture col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/2.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/2.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">US Gas Company Masrani</a></h4>
+                            <span class="tag">Power & Energy</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering power agriculture construction col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/3.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/3.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">Generate Natural Power</a></h4>
+                            <span class="tag">Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering power agriculture col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/4.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/4.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">Petroleum Tank Pipe</a></h4>
+                            <span class="tag">Power & Energy</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering construction agriculture col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/5.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/5.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">Boston Tailway Station</a></h4>
+                            <span class="tag">Construction</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering power construction col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/6.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/6.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">CNF Machine Engineering</a></h4>
+                            <span class="tag">Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering agriculture col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/7.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/7.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">Sydney Harbour Bridge</a></h4>
+                            <span class="tag">Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering agriculture col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/8.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/8.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">Rail Engine Manufacture</a></h4>
+                            <span class="tag">Construction</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Block -->
+                    <div class="project-block-two mix all engineering agriculture col-md-4 col-sm-6 col-xs-12">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/gallery/9.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <a href="{% static 'website/images/gallery/9.jpg' %}" class="lightbox-image" data-fancybox="Gallery"><span class="fa fa-search-plus"></span></a>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <h4><a href="{% url 'website:projects_single' %}">Malasia Logostic Port</a></h4>
+                            <span class="tag">Power & Energy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Styled Pagination -->
+            <div class="styled-pagination text-center">
+                <ul class="clearfix">
+                    <li><a class="prev" href="#"><span class="fa fa-angle-left"></span></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a class="next" href="#"><span class="fa fa-angle-right"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Project Section Two -->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+<script src="{% static 'website/js/mixitup.js' %}"></script>
+{% endblock %}

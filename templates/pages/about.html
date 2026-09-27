@@ -1,0 +1,369 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | About Us{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>About Us</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- About Us -->
+    <section class="about-section-two">
+        <div class="auto-container">
+            <div class="outer-box clearfix" style="background-image:url({% static 'website/images/background/4.jpg' %});">
+                <div class="highlight-box">
+                    <div class="info-carousel owl-carousel owl-theme">
+                        <!-- About Block -->
+                        <div class="about-block-two">
+                            <div class="icon-box"><span class="icon flaticon-house"></span></div>
+                            <h3>ISO Cerfitied Company</h3>
+                            <div class="text">Explain to you how this mistaken denouncing pleasure and praising pain was born & will give complete account of the system.</div>
+                        </div>
+
+                        <!-- About Block -->
+                        <div class="about-block-two">
+                            <div class="icon-box"><span class="icon flaticon-house"></span></div>
+                            <h3>Smart Technology</h3>
+                            <div class="text">Explain to you how this mistaken denouncing pleasure and praising pain was born & will give complete account of the system.</div>
+                        </div>
+
+                        <!-- About Block -->
+                        <div class="about-block-two">
+                            <div class="icon-box"><span class="icon flaticon-house"></span></div>
+                            <h3>Team of Professionals</h3>
+                            <div class="text">Explain to you how this mistaken denouncing pleasure and praising pain was born & will give complete account of the system.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us -->
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="auto-container">
+            <div class="sec-title">
+                 <h2>Story About Machinery</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <h3>We are leading manufacturing company in european countries.</h3>
+                        <div class="text">
+                            <p>Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle  our  works sectors multi disciplinary team of engineering & experts, who  pursues desires obtains pains itself  there anyone loves or pursues desires  obtain except to obtain some advantages from it? But who has any right to find fault.</p>
+
+                            <p>Idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                        </div>
+                        <div class="info">
+                            <h4 class="name">Thomos Nicholes</h4>
+                            <span class="designation">CEO / Founder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Verticle Carousel Column-->
+                <div class="carousel-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="verticle-slider-one">
+                        <div class="verticle-carousel">
+                            <!--Featured Block Two-->
+                            <div class="story-block">
+                                <div class="inner-box">
+                                    <span class="date">Nov 1984</span>
+                                    <div class="image-box"><img src="{% static 'website/images/resource/feature-1.jpg' %}" alt=""></div>
+                                    <h3><a href="#">Started at Newyork City</a></h3>
+                                    <div class="text">The great explorer of the truth, the master-builder of human happiness one rejects dislikes, or avoids pleasure itself.</div>
+                                </div>
+                            </div>
+
+                            <!--Featured Block Two-->
+                            <div class="story-block">
+                                <div class="inner-box">
+                                    <span class="date">Nov 1984</span>
+                                    <div class="image-box"><img src="{% static 'website/images/resource/feature-2.jpg' %}" alt=""></div>
+                                    <h3><a href="#">8 New Branches Opened</a></h3>
+                                    <div class="text">The great explorer of the truth, the master-builder of human happiness one rejects dislikes, or avoids pleasure itself.</div>
+                                </div>
+                            </div>
+
+                            <!--Featured Block Two-->
+                            <div class="story-block">
+                                <div class="inner-box">
+                                    <span class="date">Nov 1984</span>
+                                    <div class="image-box"><img src="{% static 'website/images/resource/feature-1.jpg' %}" alt=""></div>
+                                    <h3><a href="#">Started at Newyork City</a></h3>
+                                    <div class="text">The great explorer of the truth, the master-builder of human happiness one rejects dislikes, or avoids pleasure itself.</div>
+                                </div>
+                            </div>
+
+                            <!--Featured Block Two-->
+                            <div class="story-block">
+                                <div class="inner-box">
+                                    <span class="date">Nov 1984</span>
+                                    <div class="image-box"><img src="{% static 'website/images/resource/feature-2.jpg' %}" alt=""></div>
+                                    <h3><a href="#">8 New Branches Opened</a></h3>
+                                    <div class="text">The great explorer of the truth, the master-builder of human happiness one rejects dislikes, or avoids pleasure itself.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Story Section -->
+
+    <!-- Industry Section -->
+    <div class="industry-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Machinery Specials</h2>
+            </div>
+        </div>
+        <div class="industry-carousel owl-carousel owl-theme">
+            <!-- Industry Block -->
+            <div class="industry-block">
+                <div class="image-box">
+                    <div class="image"><a href="{% url 'website:market_sector_single' %}"><img src="{% static 'website/images/resource/industry-1.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="lower-content">
+                     <div class="icon-box"><span class="icon flaticon-man-welding"></span></div>
+                     <h3><a href="#">Passionate</a></h3>
+                     <div class="text">There anyone who loves or pursues sed desires obtain pain of itself.</div>
+                     <div class="link-box"><a href="{% url 'website:market_sector_single' %}"><i class="fa fa-hand-o-right"></i>Read More</a></div>
+                </div>
+            </div>
+
+            <!-- Industry Block -->
+            <div class="industry-block bg-gray">
+                <div class="image-box">
+                    <div class="image"><a href="{% url 'website:market_sector_single' %}"><img src="{% static 'website/images/resource/industry-2.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="lower-content">
+                     <div class="icon-box"><span class="icon flaticon-robot-arm"></span></div>
+                     <h3><a href="#">Honest & Depandable</a></h3>
+                     <div class="text">Any right to find fault with a man ut who chooses to enjoy a pleasure.</div>
+                     <div class="link-box"><a href="{% url 'website:market_sector_single' %}"><i class="fa fa-hand-o-right"></i>Read More</a></div>
+                </div>
+            </div>
+
+            <!-- Industry Block -->
+            <div class="industry-block">
+                <div class="image-box">
+                    <div class="image"><a href="{% url 'website:market_sector_single' %}"><img src="{% static 'website/images/resource/industry-3.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="lower-content">
+                     <div class="icon-box"><span class="icon flaticon-industry"></span></div>
+                     <h3><a href="#">Work Satisfaction</a></h3>
+                     <div class="text">Expound the actual teaching of the great explorer of the truth, the master.</div>
+                     <div class="link-box"><a href="{% url 'website:market_sector_single' %}"><i class="fa fa-hand-o-right"></i>Read More</a></div>
+                </div>
+            </div>
+
+            <!-- Industry Block -->
+            <div class="industry-block bg-gray">
+                <div class="image-box">
+                    <div class="image"><a href="{% url 'website:market_sector_single' %}"><img src="{% static 'website/images/resource/industry-4.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="lower-content">
+                     <div class="icon-box"><span class="icon flaticon-list"></span></div>
+                     <h3><a href="#">Awesome Support</a></h3>
+                     <div class="text">Occur in which toil and pain can procure him some great pleasure.</div>
+                     <div class="link-box"><a href="{% url 'website:market_sector_single' %}"><i class="fa fa-hand-o-right"></i>Read More</a></div>
+                </div>
+            </div>
+
+            <!-- Industry Block -->
+            <div class="industry-block">
+                <div class="image-box">
+                    <div class="image"><a href="{% url 'website:market_sector_single' %}"><img src="{% static 'website/images/resource/industry-5.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="lower-content">
+                     <div class="icon-box"><span class="icon flaticon-gear"></span></div>
+                     <h3><a href="#">Ontime Delivery</a></h3>
+                     <div class="text">Expound the actual teaching of the great explorer of the truth, the master.</div>
+                     <div class="link-box"><a href="{% url 'website:market_sector_single' %}"><i class="fa fa-hand-o-right"></i>Read More</a></div>
+                </div>
+            </div>
+
+            <!-- Industry Block -->
+            <div class="industry-block bg-gray">
+                <div class="image-box">
+                    <div class="image"><a href="{% url 'website:market_sector_single' %}"><img src="{% static 'website/images/resource/industry-2.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="lower-content">
+                     <div class="icon-box"><span class="icon flaticon-robot-arm"></span></div>
+                     <h3><a href="#">Honest & Depandable</a></h3>
+                     <div class="text">Any right to find fault with a man ut who chooses to enjoy a pleasure.</div>
+                     <div class="link-box"><a href="{% url 'website:market_sector_single' %}"><i class="fa fa-hand-o-right"></i>Read More</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Industry Section -->
+
+    <!-- Call To Action -->
+    <section class="call-to-action" style="background-image: url({% static 'website/images/background/3.jpg' %});">
+        <div class="auto-container">
+            <div class="inner-container clearfix">
+                <div class="text-box"><p>Innovative products and service for construction projects and Automative service.</p></div>
+                <div class="btn-box"><a href="{% url 'website:projects' %}" class="theme-btn btn-style-one">Our Latest Projects</a></div>
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action -->
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Meet Our Team</h2>
+            </div>
+            <div class="row clearfix">
+                <!-- Team Block -->
+                <div class="team-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/resource/team-1.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="email"><a href="#"><span class="flaticon-email-1"></span></a></div>
+                            <h3 class="name">Morgan Campbell</h3>
+                            <span class="designation">Founder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Block -->
+                <div class="team-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/resource/team-2.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="email"><a href="#"><span class="flaticon-email-1"></span></a></div>
+                            <h3 class="name">William Robertson</h3>
+                            <span class="designation">President</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Block -->
+                <div class="team-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/resource/team-3.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="email"><a href="#"><span class="flaticon-email-1"></span></a></div>
+                            <h3 class="name">Ashlynn Williams</h3>
+                            <span class="designation">Engineer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Block -->
+                <div class="team-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/resource/team-4.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="email"><a href="#"><span class="flaticon-email-1"></span></a></div>
+                            <h3 class="name">Dardern Curthbert</h3>
+                            <span class="designation">Engineer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Block -->
+                <div class="team-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/resource/team-5.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="email"><a href="#"><span class="flaticon-email-1"></span></a></div>
+                            <h3 class="name">Roedge Philander</h3>
+                            <span class="designation">Team Leader</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Block -->
+                <div class="team-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure><img src="{% static 'website/images/resource/team-6.jpg' %}" alt=""></figure>
+                            <div class="overlay-box">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="email"><a href="#"><span class="flaticon-email-1"></span></a></div>
+                            <h3 class="name">Felicity BNovarge</h3>
+                            <span class="designation">Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Team Section -->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+{% endblock %}

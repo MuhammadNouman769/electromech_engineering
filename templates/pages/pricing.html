@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Pricing{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Pricing Table</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>About Us</li>
+                <li>Pricing Table</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!-- Pricing Table -->
+                <div class="pricing-table col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                         <!-- table header -->
+                        <div class="table-header">
+                            <span class="icon flaticon-brick-1"></span>
+                            <div class="title"><h3>Starter Plan</h3></div>
+                        </div>
+                        <!-- table body -->
+                        <div class="table-body">
+                            <ul>
+                                <li>Free Monitoring for Spouse</li>
+                                <li>Monitored in the USA</li>
+                                <li>24/7 Emergency Monitoring</li>
+                                <li>Free Equipment Use</li>
+                                <li>Senior Discount Available</li>
+                            </ul>
+
+                            <div class="price"><sub>$</sub><span>49</span>/ Mo</div>
+                            <!-- table footer -->
+                            <div class="table-footer">
+                                <a href="#" class="theme-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Table -->
+                <div class="pricing-table active col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                         <!-- table header -->
+                        <div class="table-header">
+                            <span class="icon flaticon-brick-1"></span>
+                            <div class="title"><h3>Advanced Plan</h3></div>
+                        </div>
+                        <!-- table body -->
+                        <div class="table-body">
+                            <ul>
+                                <li>Free Monitoring for Spouse</li>
+                                <li>Monitored in the USA</li>
+                                <li>24/7 Emergency Monitoring</li>
+                                <li>Free Equipment Use</li>
+                                <li>Senior Discount Available</li>
+                            </ul>
+
+                            <div class="price"><sub>$</sub><span>79</span>/ Mo</div>
+                            <!-- table footer -->
+                            <div class="table-footer">
+                                <a href="#" class="theme-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Table -->
+                <div class="pricing-table col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                         <!-- table header -->
+                        <div class="table-header">
+                            <span class="icon flaticon-heart-shaped-diamond"></span>
+                            <div class="title"><h3>Enterprise Plan</h3></div>
+                        </div>
+                        <!-- table body -->
+                        <div class="table-body">
+                            <ul>
+                                <li>Free Monitoring for Spouse</li>
+                                <li>Monitored in the USA</li>
+                                <li>24/7 Emergency Monitoring</li>
+                                <li>Free Equipment Use</li>
+                                <li>Senior Discount Available</li>
+                            </ul>
+
+                            <div class="price"><sub>$</sub><span>99</span>/ Mo</div>
+                            <!-- table footer -->
+                            <div class="table-footer">
+                                <a href="#" class="theme-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Pricing Section -->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+{% endblock %}

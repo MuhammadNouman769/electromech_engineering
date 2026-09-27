@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Projects Detail{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Single Project</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>Projects</li>
+                <li>Single Project</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--Project Single Section-->
+    <section class="project-single-section">
+        <div class="auto-container">
+            <div class="inner-container">
+                <!--Upper Box-->
+                <div class="upper-box">
+                    <div class="single-item-carousel owl-carousel owl-theme">
+                        <div class="slide">
+                            <div class="image">
+                                <img src="{% static 'website/images/resource/image-5.jpg' %}" alt="" />
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <img src="{% static 'website/images/resource/image-5.jpg' %}" alt="" />
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <img src="{% static 'website/images/resource/image-5.jpg' %}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="title">London Wind Energy Plant</h2>
+                <div class="row clearfix">
+                    <!--Content Box-->
+                    <div class="content-column col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                        <div class="inner-column">
+                            <div class="text">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatems accusantium doloremqu laudantiums ut, totams our aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae duis autems vell eums iriure dolors in hendrerit saepe eveniet  in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at seds eros sed et accumsan et iusto odio dignissim. Temporibus autem quibusdam et aut officiis debitis autrerum necesy itatibus saepe evenit uts et ut voluptates repudiandae sint et molestiae non recusandae.</p>
+                                <p>Architecto beatae duis autems vell eums iriure dolors in hendrerit saepe eveniet  in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at seds eros sed et accumsan et iusto odio works dignissim et autre officiis debitis autrerum sed necessitatibus saepe evenit.</p>
+                            </div>
+                            <ul class="social-icon-one">
+                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                <li><a href="#"><span class="fa fa-skype"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Info Column-->
+                    <div class="info-column col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                        <div class="inner-column">
+                            <ul>
+                                <li><span>Category : </span>Power and Energy</li>
+                                <li><span>Client : </span>Energy Producers Ltd</li>
+                                <li><span>Date : </span>18th Aug, 2017</li>
+                                <li><span>Link : </span><a href="#">www.steelthemes.com</a></li>
+                                <li><span>Rating </span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-half-empty"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="load-more-option">
+                    <ul class="clearfix">
+                        <li class="prev pull-left"><a href="#"><span class="fa fa-angle-left"></span> Prev</a></li>
+                        <li class="load-more"><a href="#"><span class="fa fa-th"></span></a></li>
+                        <li class="next pull-right"><a href="#">Next <span class="fa fa-angle-right"></span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Project Single Section-->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+<script src="{% static 'website/js/mixitup.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Machinery - HTML Template | Testimonial{% endblock %}
+
+{% block content %}
+<!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/2.jpg' %})">
+        <div class="auto-container">
+            <h1>Testimonials</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="{% url 'website:index' %}">Home</a></li>
+                <li>About Us</li>
+                <li>Testimonials</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--Testimonial Section-->
+    <section class="testimonial-page-section">
+        <div class="auto-container">
+            <div class="masonry-items-container row clearfix">
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-5.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text">Industry helped me transform my dated, patchwork front yard inviting.</div>
+                        <span class="name">Emma Parvis</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-6.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text"> Idea of denouncing pleasure & praising pain was born and I will give you  completed account of the system.</div>
+                        <span class="name">Lawana Reininger</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-7.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text">Industry helped me transform my dated, patchwork front yard inviting.</div>
+                        <span class="name">Sherice Wansitler</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-8.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text">Industry helped me transform my dated, patchwork front yard inviting.</div>
+                        <span class="name">Louie Labay</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <!--Video Box-->
+                    <div class="video-box">
+                        <figure class="image">
+                            <img src="{% static 'website/images/resource/video-img-2.jpg' %}" alt="">
+                        </figure>
+                        <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="fa fa-play-circle"></span></a>
+                        <h3 class="title">Jessica Jung</h3>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-9.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text">Industry helped me transform my dated, patchwork front yard inviting.</div>
+                        <span class="name">Maxine Nedina</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-10.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text"> Idea of denouncing pleasure & praising pain was born and I will give you  completed account of the system.</div>
+                        <span class="name">Krystina Bovain</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-11.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text">Idea of denouncing pleasure & praising pain was born and I will give you  completed account of the system.</div>
+                        <span class="name">Scarlett Buccieri</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block Two -->
+                <div class="testimonial-block-two masonry-item col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="thumb"><img src="{% static 'website/images/resource/thumb-5.jpg' %}" alt=""></div>
+                        <h3><a href="#">Done Wonderful front yard transformation</a></h3>
+                        <div class="text">Industry helped me transform my dated, patchwork front yard inviting.</div>
+                        <span class="name">Charita Gauna</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial Section-->
+
+<!-- Main Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/isotope.js' %}"></script>
+<script src="{% static 'website/js/slick.min.js' %}"></script>
+{% endblock %}
